@@ -1,0 +1,124 @@
+/*SCSS for larger tablets and desktop*/
+
+@import "./base";
+
+/*Header-section*/
+
+@media (min-width: 801px) {
+	header {
+		position: absolute;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 100px 10px;
+		color: #000;
+		z-index: 10;
+		background-color: transparent;
+	}
+}
+
+/*Menu*/
+
+@media (min-width: 801px) {
+	.menu {
+		ul {
+			display: flex;
+			margin-right: -45px;
+			li {
+				list-style: none;
+				color: $fontColor;
+				text-decoration: none;
+				font-size: 20px;
+				margin: 0 20px;
+			}
+			li a {
+				text-decoration: none;
+				font-weight: 400;
+				font-size: $fontsize;
+				color: $linkColor;
+				&:hover {
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+}
+
+/*Service/CV, Portfolio, Courses-section*/
+
+@media (min-width: 801px) {
+	.columnservice {
+		width: 33.33%;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.service-area {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+/*About-section*/
+
+@media (min-width: 801px) {
+	.columnabout {
+		height: 100vh;
+		float: left;
+		width: 50%;
+		padding-top: 0%;
+		padding-bottom: 0px;
+		padding-left: 50px;
+		padding-right: 50px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.about-area {
+		background-color: $secondaryBackground;
+		padding-top: 0%;
+		padding-bottom: 0px;
+		padding-left: 17%;
+		padding-right: 17%;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		.btn {
+			@include btn;
+			color: white;
+			text-decoration: none;
+			background-color: $primaryColor;
+			-webkit-transition-duration: 0.4s;
+			transition-duration: 0.4s;
+			font-weight: bold;
+			&:hover {
+				background-color: $primaryColorHover;
+			}
+		}
+	}
+	.img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/*Contact-section*/
+@media (min-width: 801px) {
+	.contact-area {
+		height: 100vh;
+		float: left;
+		width: 100%;
+		padding-top: 0%;
+		padding-bottom: 0px;
+		padding-left: 17%;
+		padding-right: 17%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		flex-flow: wrap;
+	}
+}

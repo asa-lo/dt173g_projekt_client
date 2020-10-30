@@ -1,0 +1,123 @@
+/*SCSS for desktop and larger screens*/
+
+@import "./base";
+
+/*About-section*/
+
+@media (min-width: 1099px) {
+    .columnabout {
+        height: 100vh;
+        float: left;
+        width: 50%;
+        padding-top: 0%;
+        padding-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .about-area {
+        background-color: $secondaryBackground;
+        padding-top: 0%;
+        padding-bottom: 0px;
+        padding-left: 15%;
+        padding-right: 15%;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .btn {
+            @include btn;
+            color: white;
+            text-decoration: none;
+            background-color: $primaryColor;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            font-weight: bold;
+            &:hover {
+                background-color: $primaryColorHover;
+            }
+        }
+    }
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Service/CV, Portfolio, Courses-section*/
+
+@media (min-width: 1099px) {
+    .columnservice {
+        float: left;
+        width: 33.33%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .service-area {
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+}
+
+/*Contact-section*/
+
+@media (min-width: 1099px) {
+    .contact-area {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        text-align: center;
+    }
+}
+
+/*Logos*/
+
+@media only screen and (min-width: 1100px) {
+    #logo-1 {
+        display: block;
+    }
+    #logo {
+        img {
+            width: 210px;
+        }
+    }
+    #logo-2 {
+        display: none;
+    }
+}
+@media only screen and (min-width: 801px) and (max-width: 1099px) {
+    #logo-1 {
+        display: none;
+    }
+    #logo-2 {
+        display: block;
+    }
+    #logo2 {
+        img {
+            width: 170px;
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    #logo-1 {
+        display: none;
+    }
+    #logo-2 {
+        display: block;
+    }
+    #logo2 {
+        img {
+            width: 160px;
+        }
+    }
+}

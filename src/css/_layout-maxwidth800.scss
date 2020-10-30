@@ -1,0 +1,103 @@
+/*SCSS for mobile and smaller tablets*/
+
+@import "./base";
+
+@media (max-width: 800px) {
+    /*Header-section*/
+
+    header {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000;
+        z-index: 10;
+        background-color: $secondaryBackground;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 20px 50px;
+    }
+}
+/*Menu*/
+@media (max-width: 800px) {
+    .menu {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: 0px;
+
+            li {
+                list-style: none;
+                text-decoration: none;
+                font-size: 16px;
+                margin: 0px 10px;
+            }
+        }
+    }
+}
+
+/*CV, Portfolio, Courses-section*/
+@media (max-width: 800px) {
+    .columnservice {
+        width: 100%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .service-area {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/*About-section*/
+@media (max-width: 800px) {
+    .columnabout {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .about-area {
+        background-color: $secondaryBackground;
+        padding-top: 170px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .btn {
+        @include btn;
+        color: white;
+        text-decoration: none;
+        background-color: $primaryColor;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        font-weight: bold;
+        &:hover {
+            background-color: $primaryColorHover;
+        }
+    }
+
+    /*Contact-section*/
+    @media (max-width: 800px) {
+        .contact-area {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+        }
+    }
+}
